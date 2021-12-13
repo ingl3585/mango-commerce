@@ -18,7 +18,7 @@ class UserManager(BaseUserManager):
         # Create a user from the UserModel
         # Use the normalize_email method from the BaseUserManager to
         # normalize the domain of the email
-        # We'll also unwind the extra fields.  Remember that two asterisk (**)
+        # We'll also unwind the extra fields.  Remember that two asterisks (**)
         # in Python refers to the extra keyword arguments that are passed into
         # a function (meaning these are key=value pairs).
         user = self.model(email=self.normalize_email(email), **extra_fields)
